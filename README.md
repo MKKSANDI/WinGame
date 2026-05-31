@@ -54,7 +54,7 @@ python -m pip install --upgrade pyinstaller
 python -m PyInstaller --noconfirm --clean --onefile --windowed --name "WinGame" --icon "WinGame.ico" --add-data "WinGame.png;." --add-data "system.png;." --add-data "game.png;." GamePerformanceOptimizer.py
 ```
 
-Copy `dist\WinGame.exe` to `releases\WinGame.exe`.
+
 
 ## Notes
 
