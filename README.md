@@ -37,7 +37,6 @@ It applies a selected set of system-level performance tweaks through an explicit
 ## Run from source
 
 ```powershell
-cd "D:\Moved From C\Desktop\Projects\WinGame"
 python -m pip install -r requirements.txt
 python GamePerformanceOptimizer.py
 ```
@@ -45,16 +44,15 @@ python GamePerformanceOptimizer.py
 ## Build
 
 ```powershell
-cd "D:\Moved From C\Desktop\Projects\WinGame"
-.\BUILD_EXE.bat
+BUILD.bat pyinstaller
 ```
 
 ```powershell
-cd "D:\Moved From C\Desktop\Projects\WinGame"
-.\BUILD_NUITKA.bat
+BUILD.bat nuitka
 ```
 
 ## Notes
 
 - some settings require reboot (`Hyper-V`, `VM Platform`, `all cores boot`)
 - `GamePerformanceOptimizer.py` is the primary maintained entry point
+- each build produces a packaged release in `releases\`
